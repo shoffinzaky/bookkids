@@ -2,7 +2,7 @@ const BASE_URL = 'https://openlibrary.org';
 
 export async function fetchChildrenBooks() {
     try{
-        const response = await fetch(`${BASE_URL}//search.json?subject=children&limit=20`);
+        const response = await fetch(`${BASE_URL}/search.json?subject=children&limit=20`);
         const data = await response.json();
         return data.docs;
     } catch (error) {

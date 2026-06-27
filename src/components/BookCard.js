@@ -18,7 +18,7 @@ export default function BookCard({ book, onPress, onToggleFavorite, isFavorite }
           {book.author_name ? book.author_name[0] : 'Penulis tidak diketahui'}
         </Text>
         <Text style={styles.year}>
-          {book.first_publish_year ? `📅 ${book.first_publish_year}` : ''}
+          {book.first_publish_year ? book.first_publish_year : ''}
         </Text>
       </View>
 
