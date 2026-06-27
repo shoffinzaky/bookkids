@@ -29,5 +29,4 @@ Kamu bisa menjalankan aplikasi ini di laptop atau langsung di HP pribadimu mengg
 
 **Download atau Clone Proyek Ini**
    ```bash
-   git clone [https://github.com/username/bookkids.git](https://github.com/username/bookkids.git)
-   cd bookkids
+   git clone [https://github.com/username/bookkids.git](https://github.com/shoffinzaky/bookkids.git)
