@@ -1,8 +1,10 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
+import { useFocusEffect } from '@react-navigation/native';
 import {
   View, Text, TouchableOpacity,
   StyleSheet, FlatList,
   TextInput, ActivityIndicator,
+
 } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { fetchChildrenBooks } from "../services/api";
@@ -19,6 +21,12 @@ export default function BookListScreen({ navigation }) {
     loadBooks();
     loadFavorites();
   }, []);
+
+  useFocusEffect(
+    useCallback(() => {
+        loadFavorites();
+    }, [])
+  );
 
   async function loadFavorites() {
     try {
