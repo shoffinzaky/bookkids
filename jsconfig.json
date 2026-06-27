@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "forceConsistentCasingInFileNames": false,
+    "checkJs": false,
+    "jsx": "react-native",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "ignoreDeprecations": "6.0",
+    "baseUrl": "."
+  },
+  "exclude": ["node_modules"]
+}
